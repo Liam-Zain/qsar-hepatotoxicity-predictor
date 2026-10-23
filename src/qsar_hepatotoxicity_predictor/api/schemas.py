@@ -1,10 +1,11 @@
 from pydantic import BaseModel
+from typing import List
 
 class SMILESRequest(BaseModel):
     smiles: str
 
 class BatchSMILESRequest(BaseModel):
-    smiles_list: list[str]
+    smiles_list: List[str]
 
 class PredictionResponse(BaseModel):
     smiles: str

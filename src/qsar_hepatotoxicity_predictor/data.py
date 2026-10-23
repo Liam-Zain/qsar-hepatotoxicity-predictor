@@ -1,8 +1,8 @@
 import pandas as pd
 
-def load_dataset(file_path: str) -> pd.DataFrame:
+def load_dataset(data_path: str) -> pd.DataFrame:
     """Loads the raw Tox Khan dataset from a CSV file."""
-    df = pd.read_csv(file_path)
+    df = pd.read_csv(data_path)
     print(f"Tox Khan dataset loaded successfully: {len(df)} molecules")
     return df
 
